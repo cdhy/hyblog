@@ -16,7 +16,7 @@
 
 ![图表-morris](https://github.com/cdhy/AdminLTE_HY/raw/master/images/charts_morris.png)
 
-![UI_一般元素](https://github.com/cdhy/AdminLTE_HY/raw/master/images/ui_general.png)
+![UI_普通表单](https://github.com/cdhy/AdminLTE_HY/raw/master/images/ui_general.png)
 
 ![表单_一般](https://github.com/cdhy/AdminLTE_HY/raw/master/images/form_general.png)
 
