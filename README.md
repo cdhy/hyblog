@@ -21,7 +21,7 @@
 ![表格_简单类型](https://github.com/cdhy/AdminLTE_HY/raw/master/images/table_simple.png)  
 
 ##### 项目结构
-
+```
 ├── index.html
 ├── index2.html
 ├── inline.html
@@ -383,6 +383,8 @@
 └── assets
       └── css
           └── app.css
+   
+   ```
 
 
     
