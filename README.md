@@ -1,7 +1,7 @@
 #### 定制的AdminLTE 后台
 
 - 基于Bootstrap 3.3.7 做了定制
-- 修改了AdminLTE的文件结构  
+- 修改了AdminLTE的文件结构
 - 所有第三方插件均放在vendor下,包括AdminLTE
 - 个人的css和js放在asset下
 
@@ -9,16 +9,16 @@
 *正在逐步完善之中*
 
 ![面板1](https://github.com/cdhy/AdminLTE_HY/raw/master/images/dashboard1.png)
- 
+
 ![布局-fixed](https://github.com/cdhy/AdminLTE_HY/raw/master/images/layout_fixed.png)
- 
-![图表-morris](https://github.com/cdhy/AdminLTE_HY/raw/master/images/charts_morris.png) 
- 
+
+![图表-morris](https://github.com/cdhy/AdminLTE_HY/raw/master/images/charts_morris.png)
+
 ![UI_一般元素](https://github.com/cdhy/AdminLTE_HY/raw/master/images/ui_general.png)
 
 ![表单_一般](https://github.com/cdhy/AdminLTE_HY/raw/master/images/form_general.png)
 
-![表格_简单类型](https://github.com/cdhy/AdminLTE_HY/raw/master/images/table_simple.png)  
+![表格_简单类型](https://github.com/cdhy/AdminLTE_HY/raw/master/images/table_simple.png)
 
 ##### 项目结构
 ```
@@ -58,8 +58,7 @@
 ├── form_general.html
 ├── general.html
 ├── ui_icons.html
-├── widgets.html
-│ 
+├── widgets.html 
 ├── images
 │   ├── calendar.png
 │   ├── charts_chartjs.png
@@ -383,15 +382,15 @@
 └── assets
       └── css
           └── app.css
-   
+
    ```
 
 
-    
 
 
 
- 
+
+
 
 
 
