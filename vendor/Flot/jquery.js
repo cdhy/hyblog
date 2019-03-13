@@ -3738,7 +3738,7 @@ var cachedruns,
 
 	// Loosely modeled on CSS identifier characters
 	// An unquoted value should be a CSS identifier (http://www.w3.org/TR/css3-selectors/#attribute-selectors)
-	// Proper syntax: http://www.w3.org/TR/CSS21/syndata.html#value-def-identifier
+	// Proper syntax: http://www.w3.org/TR/CSS21/syntable_data.html#value-def-identifier
 	identifier = characterEncoding.replace( "w", "w#" ),
 
 	// Acceptable operators http://www.w3.org/TR/selectors/#attribute-selectors
