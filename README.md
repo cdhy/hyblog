@@ -1,7 +1,9 @@
 #### 定制的AdminLTE 后台
 
 - 基于Bootstrap 3.3.7 做了定制
-- 修改了AdminLTE的文件结构
+- 基于AdminLTE 2.4.5 修改,仍旧保持AdminLTE的原沬原味
+- 修改了AdminLTE加css和js位置
+- 修改了边栏菜单,翻译为中文
 - 所有第三方插件均放在vendor下,包括AdminLTE
 - 个人的css和js放在asset下
 
