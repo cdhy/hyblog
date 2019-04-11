@@ -27,7 +27,7 @@
     <!-- Select2 -->
     <link rel="stylesheet" href="vendor/iCheck/all.css">
     <!-- Web Application Css -->
-    <link rel="stylesheet" href="assets/css/backend.css">
+    <link rel="stylesheet" href="assets/css/public.css">
     <title>AdminLTE后台管理 | 分类管理</title>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -387,10 +387,10 @@
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
             <section class="content-header">
-                <h1>
+                <!-- <h1>
                     分类
                     <small>分类列表</small>
-                </h1>
+                </h1> -->
                 <ol class="breadcrumb">
                     <li><a href="#"><i class="fa fa-dashboard"></i> 面板</a></li>
                     <li>分类</li>
@@ -402,11 +402,9 @@
                 <div class="col-xs-12">
                     <div class="box">
                         <div class="box-header">
-                            <h3 class="box-title">所有分类</h3>
+                            <!-- <h3 class="box-title">所有分类</h3> -->
                             <div class="box-tools">
-                                <div class="input-group input-group-sm">
-                                    <a class='btn  btn-default btn-sm' href="content-category-create.html"><i class="fa fa-plus"></i> 添加分类</a>
-                                </div>
+                                <a class='btn  btn-default btn-sm' href="content-category-create.html"><i class="fa fa-plus"></i> 添加分类</a>
                             </div>
                         </div>
                         <!-- /.box-header -->
@@ -414,7 +412,7 @@
                             <table class="table table-hover">
                                 <tbody>
                                     <tr>
-                                        <th>ID</th>
+                                        <th style="width:50px;text-align:center !important">ID</th>
                                         <th>分类名</th>
                                         <th>类型</th>
                                         <th>排序</th>
@@ -425,7 +423,7 @@
                                         <th>操作</th>
                                     </tr>
                                     <tr>
-                                        <td>1</td>
+                                        <td style="width:50px;text-align:center !important">1</td>
                                         <td>|-LAMP</td>
                                         <td><span class="label label-default">分类</span></td>
                                         <td><input type="number" name="order" value="10" style="width:55px;"></td>
@@ -439,7 +437,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>2</td>
+                                        <td style="width:50px;text-align:center !important">2</td>
                                         <td>|-新闻</td>
                                         <td><span class="label label-primary">分类</span></td>
                                         <td><input type="number" name="order" value="10" style="width:55px;"></td>
@@ -453,7 +451,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>3</td>
+                                        <td style="width:50px;text-align:center !important">3</td>
                                         <td>|----Linux</td>
                                         <td><span class="label label-default">分类</span></td>
                                         <td><input type="number" name="order" value="10" style="width:55px;"></td>
@@ -467,7 +465,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>4</td>
+                                        <td style="width:50px;text-align:center !important">4</td>
                                         <td>|----php</td>
                                         <td><span class="label label-success">专题</span></td>
                                         <td><input type="number" name="order" value="10" style="width:55px;"></td>
@@ -481,7 +479,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>5</td>
+                                        <td style="width:50px;text-align:center !important">5</td>
                                         <td>|----Apache</td>
                                         <td><span class="label label-default">分类</span></td>
                                         <td><input type="number" name="order" value="10" style="width:55px;"></td>
@@ -495,7 +493,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>6</td>
+                                        <td style="width:50px;text-align:center !important">6</td>
                                         <td>|----MySQL</td>
                                         <td><span class="label label-success">专题</span></td>
                                         <td><input type="number" name="order" value="10" style="width:55px;"></td>
@@ -509,7 +507,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>7</td>
+                                        <td style="width:50px;text-align:center !important">7</td>
                                         <td>|----科技新闻</td>
                                         <td><span class="label label-primary">封面</span></td>
                                         <td><input type="number" name="order" value="10" style="width:55px;"></td>
@@ -523,7 +521,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>8</td>
+                                        <td style="width:50px;text-align:center !important">8</td>
                                         <td>|----娱乐新闻</td>
                                         <td><span class="label label-primary">封面</span></td>
                                         <td><input type="number" name="order" value="10" style="width:55px;"></td>
@@ -537,7 +535,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>9</td>
+                                        <td style="width:50px;text-align:center !important">9</td>
                                         <td>|----军事新闻</td>
                                         <td><span class="label label-default">分类</span></td>
                                         <td><input type="number" name="order" value="10" style="width:55px;"></td>
@@ -551,7 +549,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>10</td>
+                                        <td style="width:50px;text-align:center !important">10</td>
                                         <td>|----社会新闻</td>
                                         <td><span class="label label-default">分类</span></td>
                                         <td><input type="number" name="order" value="10" style="width:55px;"></td>

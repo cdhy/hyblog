@@ -1,0 +1,9 @@
+ *.zip
+ *.rar
+ *.via
+ *.tmp
+ *.err
+ .gitignore
+vendor/bootstrap/css_0
+.DS*
+
