@@ -110,5 +110,13 @@ ul.thumbnails {
 }
 
 /*添加文件样式*/
+.box-footer {
+  padding: 5px;
+}
+
+.p-a-l-50 {
+  position: absolute;
+  left: 50%;
+}
 
 /*# sourceMappingURL=public.css.map */
