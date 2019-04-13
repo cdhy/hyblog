@@ -32,7 +32,6 @@
     <script src="vendor/html5/respond.min.js"></script>
     <![endif]-->
 </head>
-
 <body class="hold-transition skin-blue sidebar-mini">
     <div class="wrapper">
         <header class="main-header">
@@ -386,83 +385,195 @@
             <section class="content-header">
                 <ol class="breadcrumb">
                     <li><a href="#"><i class="fa fa-dashboard"></i> 面板</a></li>
+                    <li>网站设置</li>
                     <li class="active">设置</li>
                 </ol>
             </section>
             <!-- Main content -->
             <section class="content">
                 <div class="row">
-                    <div class="col-lg-4">
-                        <div class="box box-primary">
-                            <div class="box-header with-border">
-                                <h3 class="box-title">常规设置</h3>
-                            </div>
-                            <form>
-                                <div class="box-body">
-                                    <div class="form-group">
-                                        <label for="site-name">网站名称：</label>
-                                        <input type="text" name="site_name" class="form-control" value="" id="site-name" placeholder="请输入网站名称">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="site-domain">网站域名：</label>
-                                        <input type="text" name="site_domain" class="form-control" value="" id="site-domain" placeholder="请输入域名(无http)">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="site-keyword">网站域名：</label>
-                                        <input type="text" name="site_keyword" class="form-control" value="" id="site-keyword" placeholder="请输入关键字">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="site-desc">网站描述：</label>
-                                        <textarea name="site_description" class="form-control" id="site-desc" placeholder="请输入描述"></textarea>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="col-sm-4 col-sm-offset-4">
-                                            <button type="button" class="form-control btn btn-primary">保存</button>
-                                        </div>
-                                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="box box-default">
+                            <nav id="myTabs">
+                                <ul class="nav nav-tabs">
+                                    <li class="active">
+                                        <a href="#general">常规设置</a>
+                                    </li>
+                                    <li>
+                                        <a href="#cover">图片设置</a>
+                                    </li>
+                                    <li>
+                                        <a href="#template">模版设置</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="general">
+                                    <table class="input-group">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <label for="domain">域名:</label>
+                                                    <span></span>
+                                                </td>
+                                                <td>
+                                                    <input type="text" name="domain" id="domain" class="w280">
+                                                </td>
+                                                <td>
+                                                    <span class="errmsg">
+                                                        域名不能为空
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label for="sitename">网站名:</label>
+                                                    <span></span>
+                                                </td>
+                                                <td>
+                                                    <input type="text" name="name" id="sitename" class="w280">
+                                                </td>
+                                                <td>
+                                                    <span class="errmsg">
+                                                        域名不能为空
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label for="keywords">关键字:</label>
+                                                    <span></span>
+                                                </td>
+                                                <td>
+                                                    <textarea name="keywords" id="keywords" style="height:80px" class="w280"></textarea>
+                                                </td>
+                                                <td>
+                                                    <span class="errmsg">
+
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label for="desc">描述:</label>
+                                                    <span></span>
+                                                </td>
+                                                <td>
+                                                    <textarea name="description" id="desc" style="height:100px" class="w280"></textarea>
+                                                </td>
+                                                <td>
+                                                    <span class="errmsg">
+
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <ul class="text-center u-btn-group">
+                                        <li class="inline-block">
+                                            <button class="h-btn-sm h-btn-primary">保存</button>
+                                            <button class="h-btn-sm h-btn-primary">重填</button>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="box-footer"></div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-lg-8">
-                        <div class="box box-primary">
-                            <div class="box-header with-border">
-                                <h3 class="box-title">图片设置</h>
-                            </div>
-                            <form action="" class="form-horizontal">
-                                <div class="box-body">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <h4 class="box-title">封面:</h4>
-                                            <div class="form-group">
-                                                <label for="" class="control-label col-sm-5">宽(后台):</label>
-                                                <div class="col-sm-7">
-                                                    <input type="number" value="200" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="" class="control-label col-sm-5">高(后台):</label>
-                                                <div class="col-sm-7">
-                                                    <input type="number" value="200" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="" class="control-label col-sm-5">宽(后台):</label>
-                                                <div class="col-sm-7">
-                                                    <input type="number" value="200" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="" class="control-label col-sm-5">高(后台):</label>
-                                                <div class="col-sm-7">
-                                                    <input type="number" value="200" class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="tab-pane fade" id="cover" >
+                                    <table class="input-group">
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="2"><label >LOGO</label></td>
+                                                <td>
+                                                    <label for="logoWidth">宽度：</label>
+                                                </td>
+                                                <td >
+                                                    <input type="text" name="logoWidth" id="logoWidth" class="w80">
+                                                </td>
+                                                <td>
+                                                    <span class="errmsg"> </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label for="logoHight">高度：</label>
+                                                </td>
+                                                <td >
+                                                    <input type="text" name="logoHight" id="logoHight" class="w80">
+                                                </td>
+                                                <td>
+                                                    <span class="errmsg"> </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="2"><label >文章封面</label></td>
+                                                <td>
+                                                    <label for="articleCoverWidth">宽度：</label>
+                                                 </td>
+                                                <td >
+                                                    <input type="text" name="articleCoverWidth" id="articleCoverWidth" class="w80">
+                                                </td>
+                                                <td>
+                                                    <span class="errmsg"> </span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label for="articleCoverHight">高度：</label>
+                                                </td>
+                                                <td >
+                                                    <input type="text" name="articleCoverHight" id="articleCoverHight" class="w80">
+                                                </td>
+                                                <td>
+                                                    <span class="errmsg"> </span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <ul class="text-center u-btn-group">
+                                        <li class="inline-block">
+                                            <button class="h-btn-sm h-btn-primary">保存</button>
+                                            <button class="h-btn-sm h-btn-primary">重填</button>
+                                        </li>
+                                    </ul>
                                 </div>
-                            </form>
+                                <div class="tab-pane fade" id="template" >
+                                    <table class="input-group">
+                                        <tbody>
+                                            
+                                            <tr>
+                                                <td>
+                                                    <label>模版：</label>
+                                                </td>
+                                                <td >
+                                                    <div class="w280" sytle="height:300px">
+                                                        <ul>
+                                                            <li>list.blade.php</li>
+                                                            <li>news.blade.php</li>
+                                                            <li>linux.blade.php</li>
+                                                            <li>apace.blade.php</li>
+                                                            <li>mysql.blade.php</li>
+                                                            <li>php.blade.php</li>
+                                                            <li>default-list.blade.php</li>
+                                                            <li>default-cover.blade.php</li>
+                                                            <li>default-special.blade.php</li>
+                                                        </ul>
+
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <span class="errmsg"> </span>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+
+                                    </table>
+                                    <ul class="text-center u-btn-group">
+                                        <li class="inline-block">
+                                            <button class="h-btn-sm h-btn-primary">新建</button>
+                                            <button class="h-btn-sm h-btn-primary">上传</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -659,6 +770,11 @@
     <script src="vendor/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
     <script src="vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
     <script src="vendor/AdminLTE/js/adminlte.min.js"></script>
+    <script >
+        $('#myTabs a').click(function (e) {
+            e.preventDefault()
+            $(this).tab('show')
+        })
+    </script>
 </body>
-
 </html>
