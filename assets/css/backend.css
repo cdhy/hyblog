@@ -4,7 +4,7 @@
 }
 
 /*后台登录样式 */
-.login-logo{
+.login-logo,.register-logo{
   margin-bottom:0;
 }
 .form-control {
