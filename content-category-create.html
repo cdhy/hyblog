@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
@@ -28,9 +27,10 @@
     <link rel="stylesheet" href="vendor/iCheck/all.css">
     <!-- Bootstrap-select -->
     <link rel="stylesheet" href="vendor/bootstrap-select/css/bootstrap-select.min.css">
+    <!-- jstree sytle -->
     <link rel="stylesheet" href="vendor/jstree/themes/proton/style.min.css?0.001">
     <!-- Web Application Css -->
-    <link rel="stylesheet" href="assets/css/backend.css">
+    <link rel="stylesheet" href="assets/css/public.css">
     <title>AdminLTE后台管理 | 分类管理</title>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -38,7 +38,6 @@
     <script src="vendor/html5/respond.min.js"></script>
     <![endif]-->
 </head>
-
 <body class="hold-transition skin-blue sidebar-mini">
     <div class="wrapper">
         <header class="main-header">
@@ -379,12 +378,9 @@
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
             <section class="content-header">
-                <h1>
-                    分类
-                    <small>分类列表</small>
-                </h1>
                 <ol class="breadcrumb">
                     <li><a href="#"><i class="fa fa-dashboard"></i> 面板</a></li>
+                    <li>内容管理</li>
                     <li>分类</li>
                     <li class="active">添加分类</li>
                 </ol>
@@ -397,7 +393,7 @@
                         <form class="form-horizontal">
                             <div class="box-body">
                                 <div class="form-group">
-                                    <label for="catetgoryParent" class="col-sm-2 control-label">父分类</label>
+                                    <label for="catetgoryParent" class="col-sm-2 control-label w80">父分类</label>
                                     <div class="col-sm-10">
                                         <select name="pid" id="catetgoryParent" class="form-control">
                                             <option value="0">|--根分类</option>
@@ -458,12 +454,13 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="catetgoryeIcon" class="col-sm-2 control-label">图标</label>
+                                    <label for="catetgoryeIcon" class="col-sm-2 control-label w80">图标</label>
                                     <div class="col-sm-10">
                                         <input type="text" name="icon" id="catetgoryeIcon" class="form-control" placeholder="图标样式">
                                     </div>
                                 </div>
                                 <div class="form-group">
+<<<<<<< HEAD
                                     <label for="catetgoryeCover" class="col-sm-2 control-label">封面</label>
                                     <div class="col-sm-10">
                                         <input type="text" name="icon" id="catetgoryeCover" class="form-control" placeholder="图标样式">
@@ -471,18 +468,21 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="inputCatetgoryDesc" class="col-sm-2 control-label">描述</label>
+=======
+                                    <label for="inputCatetgoryDesc" class="col-sm-2 control-label w80">描述</label>
+>>>>>>> a8e09b5e962f1890271c2de169f2cb48f5daa970
                                     <div class="col-sm-10">
                                         <input type="text" name="desc" class="form-control" id="inputCatetgoryDesc" placeholder="分类描述">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="inputCatetgoryOrder" class="col-sm-2 control-label">排序</label>
+                                    <label for="inputCatetgoryOrder" class="col-sm-2 control-label w80">排序</label>
                                     <div class="col-sm-10">
                                         <input type="number" value="10" class="form-control" id="inputCatetgoryOrder" placeholder="分类描述">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="catetgoryIsnav" class="col-sm-2 control-label">导航栏显示</label>
+                                    <label for="catetgoryIsnav" class="col-sm-2 control-label w80">导航栏显示</label>
                                     <div class="col-sm-10">
                                         <div class="radio-inline" id="catetgoryIsnav">
                                             <label>
