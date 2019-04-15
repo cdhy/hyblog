@@ -393,8 +393,8 @@
                         <form class="form-horizontal">
                             <div class="box-body">
                                 <div class="form-group">
-                                    <label for="catetgoryParent" class="col-sm-2 control-label w80">父分类</label>
-                                    <div class="col-sm-10">
+                                    <label for="catetgoryParent" class="col-sm-3 control-label">父分类</label>
+                                    <div class="col-sm-7">
                                         <select name="pid" id="catetgoryParent" class="form-control">
                                             <option value="0">|--根分类</option>
                                             <option value="1">|--新闻</option>
@@ -412,20 +412,20 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="inputCatetgoryName" class="col-sm-2 control-label w80">分类名</label>
-                                    <div class="col-sm-10">
+                                    <label for="inputCatetgoryName" class="col-sm-3 control-label">分类名</label>
+                                    <div class="col-sm-7">
                                         <input type="text" name="cname" class="form-control" id="inputCatetgoryName" placeholder="分类名">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="inputCatetgorySlug" class="col-sm-2 control-label w80">Slug</label>
-                                    <div class="col-sm-10">
+                                    <label for="inputCatetgorySlug" class="col-sm-3 control-label">Slug</label>
+                                    <div class="col-sm-7">
                                         <input type="text" class="form-control" id="inputCatetgorySlug" name="slug" placeholder="Category Slug">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="catetgoryType" class="col-sm-2 control-label w80">类型</label>
-                                    <div class="col-sm-8">
+                                    <label for="catetgoryType" class="col-sm-3 control-label">类型</label>
+                                    <div class="col-sm-7">
                                         <div class="radio-inline" id="catetgoryType">
                                             <label>
                                                 <input type="radio" name="type" value="category" checked="checked"> 分类
@@ -444,8 +444,8 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="catetgoryTemplate" class="col-sm-2 control-label w80">模版</label>
-                                    <div class="col-sm-10">
+                                    <label for="catetgoryTemplate" class="col-sm-3 control-label">模版</label>
+                                    <div class="col-sm-7">
                                         <select name="templae" id="catetgoryTemplate" class="form-control">
                                             <option value="list.blade.php">list.blade.php</option>
                                             <option value="cover.blade.php">cover.blade.php</option>
@@ -454,21 +454,21 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="catetgoryeIcon" class="col-sm-2 control-label w80">图标</label>
-                                    <div class="col-sm-10">
+                                    <label for="catetgoryeIcon" class="col-sm-3 control-label">图标</label>
+                                    <div class="col-sm-7">
                                         <input type="text" name="icon" id="catetgoryeIcon" class="form-control" placeholder="图标样式">
                                     </div>
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="inputCatetgoryOrder" class="col-sm-2 control-label w80">排序</label>
-                                    <div class="col-sm-10">
+                                    <label for="inputCatetgoryOrder" class="col-sm-3 control-label">排序</label>
+                                    <div class="col-sm-7">
                                         <input type="number" value="10" class="form-control" id="inputCatetgoryOrder" placeholder="分类描述">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="catetgoryIsnav" class="col-sm-2 control-label w80">导航栏显示</label>
-                                    <div class="col-sm-10">
+                                    <label for="catetgoryIsnav" class="col-sm-3 control-label">导航栏显示</label>
+                                    <div class="col-sm-7">
                                         <div class="radio-inline" id="catetgoryIsnav">
                                             <label>
                                                 <input type="radio" name="isnav" value="1" checked="checked"> 是
@@ -484,8 +484,12 @@
                             </div>
                             <!-- /.box-body -->
                             <div class="box-footer">
-                                <button type="reset" class="btn btn-default">重填</button>
-                                <button type="submit" class="btn btn-success pull-right">保存</button>
+                                <div class="form-group">
+                                    <div class="col-sm-6 text-center col-sm-offset-3 ">
+                                        <button type="submit" class="btn btn-success btn-sm" style="margin-right:30px;">保存</button>
+                                        <button type="reset" class="btn btn-default btn-sm">重填</button>
+                                    </div>
+                                </div>
                             </div>
                             <!-- /.box-footer -->
                         </form>

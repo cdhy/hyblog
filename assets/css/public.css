@@ -1,7 +1,6 @@
 @charset "UTF-8";
 html, body {
   font-family: "Microsoft YaHei","微软雅黑","Helvetica Neue", Helvetica, STHeiTi,"黑体","宋体",sans-serif;
-  font-size: 13px;
 }
 
 /*全局row调整*/
@@ -72,7 +71,16 @@ ul, ol {
 }
 
 .form-control {
-  height: 36px;
+  height: 30px;
+  padding: 5px;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+.checkbox-inline {
+  padding-left: 0px;
 }
 
 .captcha {
@@ -85,10 +93,6 @@ ul, ol {
 }
 
 /*添加文章样式*/
-.mr80 {
-  margin-left: 80px;
-}
-
 /*缩略图样式*/
 ul.thumbnails {
   max-height: 240px;
