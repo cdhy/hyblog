@@ -3,9 +3,14 @@
     min-height: 280px;
 }
 /*后台登录样式 */
+<<<<<<< HEAD
+.login-logo,.register-logo{
+  margin-bottom:0;
+=======
 
 .login-logo {
     margin-bottom: 0;
+>>>>>>> a8e09b5e962f1890271c2de169f2cb48f5daa970
 }
 .form-control {
     height: 36px;
