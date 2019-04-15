@@ -4,7 +4,7 @@
 *.tmp
 *.err
 .gitignore
-assets/css/*.sass-cache
+assets/css/.sass-cache/*
 assets/css/.sass-cache
 vendor/bootstrap/css_0
 .DS*

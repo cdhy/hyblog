@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
@@ -25,13 +26,14 @@
     <link rel="stylesheet" href="vendor/AdminLTE/css/skins/_all-skins.min.css">
     <!-- Web Application Css -->
     <link rel="stylesheet" href="assets/css/public.css">
-    <title>AdminLTE后台管理 | 分类管理</title>
+    <title>AdminLTE后台管理 | 网站设置 </title>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="vendor/html5/html5shiv.min.js"></script>
     <script src="vendor/html5/respond.min.js"></script>
     <![endif]-->
 </head>
+
 <body class="hold-transition skin-blue sidebar-mini">
     <div class="wrapper">
         <header class="main-header">
@@ -146,7 +148,8 @@
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
+                                                <i class="fa fa-warning text-yellow"></i> Very long description here that
+                                                may not fit into the
                                                 page and may cause design problems
                                             </a>
                                         </li>
@@ -339,9 +342,9 @@
                             </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li class="active"><a href="content-category-index.html"><i class="fa fa-circle-o"></i> 分类</a></li>
+                            <li><a href="content-category-index.html"><i class="fa fa-circle-o"></i> 分类</a></li>
                             <li><a href="content-article-index.html"><i class="fa fa-circle-o"></i> 文章</a></li>
-                            <li><a href="content-tag-index.html"><i class="fa fa-circle-o"></i> 标签</a></li>
+                            <li class="active"><a href="content-tag-index.html"><i class="fa fa-circle-o"></i> 标签</a></li>
                             <li><a href="content-comment-index.html"><i class="fa fa-circle-o"></i> 评论</a></li>
                             <li><a href="content-advertising-index.html"><i class="fa fa-circle-o"></i> 广告</a></li>
                             <li><a href="content-motto-index.html"><i class="fa fa-circle-o"></i> 格言</a></li>
@@ -385,137 +388,51 @@
             <section class="content-header">
                 <ol class="breadcrumb">
                     <li><a href="#"><i class="fa fa-dashboard"></i> 面板</a></li>
-                    <li>内容管理</li>
-                    <li>分类</li>
-                    <li class="active">分类列表</li>
+                    <li>标签</li>
+                    <li class="active">标签列表</li>
                 </ol>
             </section>
             <!-- Main content -->
             <section class="content">
-                <div class="col-xs-12">
-                    <div class="box">
-                        <div class="box-header">
-                            <!-- <h3 class="box-title">所有分类</h3> -->
-                            <div class="box-tools">
-                                <a class='btn  btn-default btn-sm' href="content-category-create.html"><i class="fa fa-plus"></i> 添加分类</a>
+                <div class="row">
+                    <div class="col-md-6 col-xs-12 col-md-offset-3">
+                        <div class="box box-default">
+                            <div class="box-header">
                             </div>
-                        </div>
-                        <!-- /.box-header -->
-                        <div class="box-body table-responsive no-padding">
-                            <table class="table table-hover">
-                                <tbody>
-                                    <tr>
-                                        <th style="width:50px;text-align:center !important">排序</th>
-                                        <th style="width:50px;text-align:center !important">ID</th>
-                                        <th>分类名</th>
-                                        <th>类型</th>
-                                        <th class="text-center">图标</th>
-                                        <th style="width:80px;text-align:center !important">查看次数</th>
-                                        <th>模板</th>
-                                        <th class="hidden-xs">Slug</th>
-                                        <th class="hidden-xs">描述</th>
-                                        <th>操作</th>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:50px;text-align:center !important"><input type="text" name="order" value="10" style="width:40px;text-align:center!important"></td>
-                                        <td class="text-center">1</td>
-                                        <td>|-LAMP</td>
-                                        <td><span class="label label-default">分类</span></td>
-                                        <td  class="text-center"><i class="fa fa-list"></i></td>
-                                        <td style="width:80px;text-align:center !important">200</td>
-                                        <td>list.blade.php</td>
-                                        <td class="hidden-xs">lamp</td>
-                                        <td class="hidden-xs">About Lamp类的文章</td>
-                                        <td>
-                                            <a href=""  title="编辑"><i class="fa fa-pencil"></i> </a>
-                                            <a href=""  title="禁用"><i class="fa fa-recycle"></i> </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:50px;text-align:center !important"><input type="text" name="order" value="10" style="width:40px;text-align:center!important"></td>
-                                        <td class="text-center">1</td>
-                                        <td>|--Apache</td>
-                                        <td><span class="label label-info">封面</span></td>
-                                        <td  class="text-center"><i class="fa fa-list"></i></td>
-                                        <td style="width:80px;text-align:center !important">200</td>
-                                        <td>cover.blade.php</td>
-                                        <td class="hidden-xs">apache</td>
-                                        <td class="hidden-xs">About Apache类的文章</td>
-                                        <td>
-                                            <a href=""  title="编辑"><i class="fa fa-pencil"></i> </a>
-                                            <a href=""  title="禁用"><i class="fa fa-recycle"></i> </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:50px;text-align:center !important"><input type="text" name="order" value="10" style="width:40px;text-align:center!important"></td>
-                                        <td class="text-center">1</td>
-                                        <td>|--MySQL</td>
-                                        <td><span class="label label-primary">专题</span></td>
-                                        <td  class="text-center"><i class="fa fa-list"></i></td>
-                                        <td style="width:80px;text-align:center !important">200</td>
-                                        <td>list.blade.php</td>
-                                        <td class="hidden-xs">mysql</td>
-                                        <td class="hidden-xs">About mysql类的文章</td>
-                                        <td>
-                                            <a href=""  title="编辑"><i class="fa fa-pencil"></i> </a>
-                                            <a href=""  title="禁用"><i class="fa fa-recycle"></i> </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:50px;text-align:center !important"><input type="text" name="order" value="10" style="width:40px;text-align:center!important"></td>
-                                        <td class="text-center">1</td>
-                                        <td>|--php</td>
-                                        <td><span class="label label-primary">分类</span></td>
-                                        <td  class="text-center"><i class="fa fa-list"></i></td>
-                                        <td style="width:80px;text-align:center !important">200</td>
-                                        <td>list.blade.php</td>
-                                        <td class="hidden-xs">php</td>
-                                        <td class="hidden-xs">About php类的文章</td>
-                                        <td>
-                                            <a href=""  title="编辑"><i class="fa fa-pencil"></i> </a>
-                                            <a href=""  title="禁用"><i class="fa fa-recycle"></i> </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td style="width:50px;text-align:center !important"><input type="text" name="order" value="10" style="width:40px;text-align:center!important"></td>
-                                        <td class="text-center">1</td>
-                                        <td>|--Linux</td>
-                                        <td><span class="label label-default">分类</span></td>
-                                        <td  class="text-center"><i class="fa fa-list"></i></td>
-                                        <td style="width:80px;text-align:center !important">200</td>
-                                        <td>list.blade.php</td>
-                                        <td class="hidden-xs">linux</td>
-                                        <td class="hidden-xs">About Linux类的文章</td>
-                                        <td>
-                                            <a href=""  title="编辑"><i class="fa fa-pencil"></i> </a>
-                                            <a href=""  title="禁用"><i class="fa fa-recycle"></i> </a>
-                                        </td>
-                                    </tr>
-
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="box-footer clearfix">
-                            <div class="box-tools pull-left">
-                                <div class="input-group input-group-sm">
-                                    <a class='btn  btn-default btn-sm' href="content-category-index.html"><i class="fa fa-align-justify"></i> 禁用列表</a>
+                            <form action="" method="" class="form-horizontal">
+                                <div class="box-body  no-padding">
+                                    <div class="form-group">
+                                        <label for="" class="col-sm-2 control-label">标签名:</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" name="tag_name" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="col-sm-2 control-label">描述:</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" name="tag_desc" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="" class="col-sm-2 control-label">模版:</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" name="tag_template" class="form-control">
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="box-tools p-a-l-50" >
-                                <ul class="pagination pagination-sm no-margin">
-                                    <li><a href="#">«</a></li>
-                                    <li><a href="#">1</a></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li><a href="#">»</a></li>
-                                </ul>
-                            </div>
-
+                                <div class="box-footer clearfix">
+                                    <div class="col-sm-6 text-center col-sm-offset-3 ">
+                                        <button type="submit" class="btn btn-success btn-sm" style="margin-right:30px;">保存</button>
+                                        <button type="reset" class="btn btn-default btn-sm">重填</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-                        <!-- /.box-body -->
+                        <!-- /.box -->
                     </div>
-                    <!-- /.box -->
+                    <!-- ./col-md-12 -->
                 </div>
+                <!-- /.row -->
             </section>
             <!-- /.content -->
         </div>
@@ -694,26 +611,22 @@
         </aside>
         <!-- /.control-sidebar -->
         <!-- Add the sidebar's background. This div must be placed
-       immediately after the control sidebar -->
+   immediately after the control sidebar -->
         <div class="control-sidebar-bg"></div>
     </div>
     <!-- ./wrapper -->
     <!--[if lt IE 9]>
-    <script src="vendor/jquery/query-1.12.4.min.js"></script>
-    <![endif]-->
+<script src="vendor/jquery/query-1.12.4.min.js"></script>
+<![endif]-->
     <!--[if (gte IE 9)!(IE)]><!-->
     <script src="vendor/jquery/jquery-3.3.1.min.js"></script>
     <!--<![endif]-->
-    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/jquery-ui/jquery-ui.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
     <script src="vendor/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-    <script type="text/javascript" src="vendor/AdminLTE/js/adminlte.min.js"></script>
-    <script type="text/javascript" src="vendor/iCheck/icheck.min.js"></script>
-    <script>
-    $('input[type="checkbox"]').iCheck({
-        checkboxClass: 'icheckbox_minimal-blue',
-        radioClass: 'iradio_minimal-blue'
-    })
-    </script>
+    <script src="vendor/AdminLTE/js/adminlte.min.js"></script>
+    <script src="vendor/AdminLTE/js/demo.js"></script>
 </body>
 
 </html>
