@@ -54,6 +54,10 @@ ul, ol {
   margin-left: 10px;
 }
 
+.box-footer {
+  padding: 5px;
+}
+
 /*表格样式调整*/
 .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
   padding: 2px;
@@ -79,10 +83,12 @@ ul, ol {
   margin-bottom: 5px;
 }
 
-.checkbox-inline {
+.checkbox-inline,
+.radio-inline {
   padding-left: 0px;
 }
 
+/*验证码*/
 .captcha {
   pointer-events: auto;
   height: 32px;
@@ -115,10 +121,6 @@ ul.thumbnails {
 }
 
 /*添加文件样式*/
-.box-footer {
-  padding: 5px;
-}
-
 .p-a-l-50 {
   position: absolute;
   left: 50%;
@@ -176,12 +178,17 @@ table th, table td {
   background: linear-gradient(to bottom, #3c8dbc 0%, #3c8dbc 100%);
 }
 
-.w80 {
-  width: 80px;
+.modal-header {
+  padding: 5px 10px;
 }
 
-.w280 {
-  width: 280px;
+.modal-body {
+  padding: 5px;
+}
+
+.modal-footer {
+  padding: 5px 10px;
+  text-align: center;
 }
 
 .inline-block {
